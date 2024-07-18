@@ -1,0 +1,36 @@
+.tree {
+  padding-top: 10px;
+  width: 243.5px;
+  border-right: 1px solid var(--border-color);
+}
+
+.root {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.folder {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+/* .subtree {
+  display: flex;
+  align-items: center;
+} */
+
+.folder,
+.file {
+  margin-bottom: 16px;
+}
+
+.folder:hover,
+.file:hover {
+  cursor: pointer;
+}
+
+.title {
+  margin-left: 8px;
+}

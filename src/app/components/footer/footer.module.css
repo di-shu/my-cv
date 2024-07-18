@@ -1,0 +1,53 @@
+.footer {
+  background-color: var(--main-background);
+  height: 50px;
+  border: 1px solid var(--border-color);
+  border-top: unset;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.find_me {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 22px;
+  padding-right: 18px;
+  border-right: 1px solid var(--border-color);
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border-right: 1px solid var(--border-color);
+}
+
+.nav a * {
+  transition: opacity 0.3s ease-in;
+}
+
+.nav a:hover * {
+  opacity: 0.5;
+}
+
+.nav a:last-child {
+  padding-right: 22px;
+  margin-left: auto;
+  border-right: unset;
+  border-left: 1px solid var(--border-color);
+}
+
+.nav a:last-child span {
+  margin-right: 5px;
+}

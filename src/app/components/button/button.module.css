@@ -1,0 +1,23 @@
+.default {
+  cursor: pointer;
+  background-color: var(--default-button-bg);
+  color: #fff;
+  transition: opacity 0.3s ease-in;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.default:hover {
+  opacity: 0.5;
+}
+
+.default.primary {
+  background-color: var(--orange);
+  color: var(--primary-button-color);
+}
+
+.default.ghost {
+  background-color: unset;
+  border: 1px solid #fff;
+  color: #fff;
+}

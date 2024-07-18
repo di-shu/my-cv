@@ -1,0 +1,10 @@
+.section_about {
+  height: 100%;
+  display: flex;
+}
+
+/* Figure out how to avoid of breaking the incapsulation principle */
+.section_about [class*="tabs_tabs"] {
+  height: 100%;
+  border-right: 1px solid var(--border-color);
+}

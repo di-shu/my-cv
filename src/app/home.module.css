@@ -1,0 +1,188 @@
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15%;
+  justify-content: space-between;
+}
+
+.content {
+  color: #fff;
+}
+
+.greetings {
+  color: var(--bright-gray);
+  font-size: 18px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.role {
+  color: var(--shade-of-blue);
+  font-size: 28px;
+  margin-bottom: 80px;
+}
+
+.comment {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.code a {
+  color: var(--red);
+  margin-left: 10px;
+}
+
+.variable {
+  color: var(--shade-of-blue);
+  margin-right: 10px;
+}
+
+.variable_name {
+  color: var(--green);
+  margin-right: 10px;
+}
+
+.game_wrapper {
+  position: relative;
+}
+
+.game {
+  position: relative;
+  z-index: 1;
+  padding: 35px 30px;
+  height: 475px;
+  width: 510px;
+  /* //background: rgb(23, 85, 83); */
+  background: linear-gradient(
+    155deg,
+    rgba(23, 85, 83, 0.7) 0%,
+    rgba(67, 217, 173, 0.13) 100%
+  );
+  border: 1px solid #0c1616;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+.play {
+  width: 239px;
+  height: 405px;
+  background-color: rgba(1, 22, 39, 0.84);
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 11px #02121b;
+}
+
+.hint_comment {
+  color: #fff;
+}
+
+.hint {
+  font-size: 14px;
+}
+
+.keyboards {
+  background-color: rgba(1, 20, 35, 0.19);
+  padding: 15px 13px;
+  border-radius: 8px;
+  margin-bottom: 21px;
+  max-width: 180px;
+}
+
+.keyboard {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5px;
+}
+
+.keyboard img {
+  pointer-events: none;
+}
+
+.keyboard img:first-child {
+  grid-column: 2/3;
+}
+
+.keyboard img:nth-child(2),
+.keyboard img:nth-child(3),
+.keyboard img:last-child {
+  grid-row: 2;
+}
+
+.keyboard img:nth-child(3) {
+  transform: rotateX(180deg);
+}
+
+.keyboard img:last-child {
+  transform: rotateY(180deg);
+}
+
+.snake_food_title {
+  padding-left: 13px;
+}
+
+.snake_food {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 132px;
+  gap: 8px;
+  padding-left: 13px;
+}
+
+.green_blur {
+  top: -150px;
+  left: -50px;
+}
+
+.blue_blur {
+  bottom: -150px;
+  right: -250px;
+}
+
+.blue_blur,
+.green_blur {
+  filter: blur(64px);
+  position: absolute;
+  pointer-events: none;
+}
+
+.bolt_up_left,
+.bolt_up_right {
+  position: absolute;
+  top: 12px;
+}
+
+.bolt_up_left {
+  left: 12px;
+}
+
+.bolt_up_right {
+  right: 12px;
+}
+
+.bolt_down_left,
+.bolt_down_right {
+  position: absolute;
+  bottom: 12px;
+}
+
+.bolt_down_left {
+  left: 12px;
+}
+
+.bolt_down_right {
+  right: 12px;
+}
+
+.game_skip {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+}
